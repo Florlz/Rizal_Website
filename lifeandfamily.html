@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/fade.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <title>Jose Rizal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-[#8d3a31] border-gray-200 px-4 lg:px-6 py-2.5">
+           <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+              <a href="https://joserizal.com" class="flex items-center">
+                 <span class="self-center text-6xl font-abuget whitespace-nowrap text-white">Jose Rizal</span>
+              </a>
+              <div class="flex items-center lg:order-2">
+                 <button data-collapse-toggle="mobile-menu-2" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                          clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                       xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                    </svg>
+                 </button>
+              </div>
+              <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                       <a href="index.html#biography"
+                          class="block py-2 pr-4 pl-3 text-white font-DM text-2xl border-b-2 border-transparent hover:border-white transition duration-300"
+                          aria-current="page">Biography</a>
+                    </li>
+                    <li>
+                       <a href="#"
+                          class="block py-2 pr-4 pl-3 text-white font-DM text-2xl border-b-2 border-transparent hover:border-white transition duration-300"
+                          aria-current="false">Works</a>
+                    </li>
+                    <li>
+                       <a href="#"
+                          class="block py-2 pr-4 pl-3 text-white font-DM text-2xl border-b-2 border-transparent hover:border-white transition duration-300"
+                          aria-current="false">Legacy</a>
+                    </li>
+                    <li>
+                       <a href="#"
+                          class="block py-2 pr-4 pl-3 text-white font-DM text-2xl border-b-2 border-transparent hover:border-white transition duration-300"
+                          aria-current="false">Resources</a>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+    <section id="navtabs">
+        <div class="flex justify-center">
+            <ul class="flex text-sm font-medium text-center text-brown-800 bg-brown-200 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 rounded-lg overflow-hidden">
+                <li>
+                    <a href="javascript:void(0)" aria-current="page"
+                        class="block py-4 px-6 bg-brown-300 hover:bg-brown-400 dark:hover:bg-brown-600"
+                        onclick="showSection('earlyLife')">Early Life in Calamba</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"
+                        class="block py-4 px-6 hover:bg-brown-400 dark:hover:bg-brown-600"
+                        onclick="showSection('education')">Education Journey</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="block py-4 px-6 hover:bg-brown-400 dark:hover:bg-brown-600"
+                        onclick="showSection('family')">Family Dynamics</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"
+                        class="block py-4 px-6 hover:bg-brown-400 dark:hover:bg-brown-600"
+                        onclick="showSection('signs')">Signs of Brilliance and Education</a>
+                </li>
+                <li>
+                    <a class="block py-4 px-6 cursor-not-allowed dark:text-gray-500">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="earlyLife" x-show.transition.opacity.duration.500ms="activeTab === 'earlyLife'" class="fade">
+        <div class="tab-section flex flex-col justify-center py-12 bg-gray-100">
+            <div class="max-w-7xl gap-7 mx-auto px-4 flex flex-col sm:flex-row">
+
+                <!-- Card with image and quote -->
+                <div class="bg-white h-fit max-w-60 shadow-md sm:rounded-lg flex-shrink-0 mb-8 sm:mb-0">
+                    <img src="img/earlyrizal.jpg" alt="José Rizal"
+                        class="w-full h-auto sm:w-48 sm:h-64 object-cover object-top">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm italic">"I was born and grew up in the shadow of the Church." -
+                            José Rizal</p>
+                    </div>
+                </div>
+
+                <!-- Blog content -->
+                <div class="max-w-2xl min-h-screen w-full mx-auto px-4 py-8 bg-white shadow-md sm:rounded-lg relative">
+                    <h1 class="text-3xl font-bold text-gray-800 mb-4 font-DM mx-4">Exploring the Early Life of José
+                        Rizal in Calamba: A Glimpse into the Roots of a National Hero</h1>
+
+                    <p class="text-gray-600 mb-8 mx-4">In the picturesque town of Calamba, nestled amidst the lush
+                        landscapes of Laguna, lies the humble beginnings of one of the most revered figures in
+                        Philippine history – José Rizal. Embarking on a journey to understand the formative years of
+                        this national hero unveils not only the beauty of his hometown but also the profound influences
+                        that shaped his character and ideals. Join us as we delve into the early life of José Rizal in
+                        Calamba, tracing the footsteps of a remarkable individual whose legacy continues to inspire
+                        generations.</p>
+
+                    <div class="mb-6">
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">1</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">June 19, 1861: Birth of José
+                                        Rizal
+                                    </h2>
+                                    <p class="text-gray-600">José Protasio Rizal Mercado y Alonso Realonda was born to
+                                        Francisco Mercado and Teodora Alonso in Calamba, a prosperous town in Laguna
+                                        province. He was the seventh child of the couple and grew up in a loving and
+                                        nurturing environment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Repeat similar structure for other sections -->
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">2</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Early Education</h2>
+                                    <p class="text-gray-600">Rizal's thirst for knowledge was evident from a young age.
+                                        His mother, Teodora, played a significant role in his early education, teaching
+                                        him to read and write at home. Rizal also received lessons from private tutors
+                                        and explored his father's extensive library, where he developed a passion for
+                                        literature, languages, and the arts.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">3</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Exposure to Injustice</h2>
+                                    <p class="text-gray-600">Growing up in Calamba, Rizal witnessed firsthand the social
+                                        injustices and oppression faced by the tenants and farmers in his community.
+                                        This exposure to the harsh realities of colonial rule and feudalism deeply
+                                        impacted him and fueled his desire for reform and social change.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">4</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Influence of Family and
+                                        Community</h2>
+                                    <p class="text-gray-600">The close-knit community of Calamba, with its rich cultural
+                                        heritage and strong sense of solidarity, played a significant role in shaping
+                                        Rizal's values and principles. His family, particularly his parents, instilled
+                                        in him a sense of duty, compassion, and resilience, which would guide him
+                                        throughout his life.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">5</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Formative Years and Ideals</h2>
+                                    <p class="text-gray-600">Rizal's formative years in Calamba laid the groundwork for
+                                        his later activism and intellectual pursuits. His experiences with education,
+                                        social injustice, and community solidarity shaped his ideals of freedom,
+                                        equality, and national identity. These ideals would later become central themes
+                                        in his writings and advocacy for Philippine independence.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat similar structure for other sections -->
+                    </div>
+
+                    <!-- Sources -->
+                    <div class="mt-8">
+                        <p class="text-gray-600 font-semibold mx-4">Sources:</p>
+                        <ul class="list-disc ml-6 mx-4">
+                            <li class="mb-2">National Historical Commission of the Philippines. "José Rizal Biography."
+                                https://nhcp.gov.ph/jose-rizal-biography/</li>
+                            <li class="mb-2">Wikipedia. "José Rizal." https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="education" x-show.transition.opacity.duration.500ms="activeTab === 'education' " class="fade" x-cloak >
+        <div class="tab-section flex flex-col justify-center py-12 bg-gray-100">
+            <div class="max-w-7xl gap-7 mx-auto px-4 flex flex-col sm:flex-row">
+
+                <!-- Card with image and quote -->
+                <div class="bg-white h-fit max-w-60 shadow-md sm:rounded-lg flex-shrink-0 mb-8 sm:mb-0">
+                    <img src="img/rizalstudies.jpg" alt="José Rizal"
+                        class="w-full h-auto sm:w-48 sm:h-64 object-cover object-top">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm italic">"I was born and grew up in the shadow of the Church." -
+                            José Rizal</p>
+                    </div>
+                </div>
+
+                <!-- Blog content -->
+                <div class="max-w-2xl min-h-screen w-full mx-auto px-4 py-8 bg-white shadow-md sm:rounded-lg relative">
+                    <h1 class="text-3xl font-bold text-gray-800 mb-4 font-DM mx-4">The Educational Journey of José Rizal
+                        in His Early Childhood</h1>
+
+                    <p class="text-gray-600 mb-8 mx-4">The early years of José Rizal, the esteemed Philippine national
+                        hero, were characterized by a journey of learning and intellectual exploration. Let's trace the
+                        timeline of his educational experiences during this formative period:</p>
+
+                    <div class="mb-6">
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">1</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Home Education with Teodora
+                                        Alonso (1861-1870):
+                                    </h2>
+                                    <p class="text-gray-600">José Rizal's educational journey began at home under the
+                                        guidance of his mother, Teodora Alonso. From his birth in Calamba, Laguna in
+                                        1861 until approximately 1870, Teodora, a well-educated woman, played a pivotal
+                                        role in shaping Rizal's early intellectual development. She instilled in him a
+                                        love for reading, writing, and the arts, laying the foundation for his future
+                                        academic pursuits.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Repeat similar structure for other sections -->
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">2</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Formal Schooling in Biñan
+                                        (1870-1872):</h2>
+                                    <p class="text-gray-600">At the age of nine, Rizal embarked on his formal schooling
+                                        journey at the Colegio de San Juan de Letran in Biñan, Laguna. This period
+                                        marked his first exposure to formal education outside the confines of his home.
+                                        Despite the challenges and discrimination he faced as a young student of mixed
+                                        race, Rizal excelled academically, demonstrating his exceptional intellect and
+                                        thirst for knowledge.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">3</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Transfer to Ateneo Municipal de
+                                        Manila (1872-1877):</h2>
+                                    <p class="text-gray-600">In 1872, at the age of eleven, Rizal enrolled at the Ateneo
+                                        Municipal de Manila, one of the most prestigious educational institutions in the
+                                        Philippines at that time. Here, he continued his studies under the guidance of
+                                        renowned Jesuit educators. During his time at Ateneo, Rizal distinguished
+                                        himself not only academically but also in extracurricular activities, showcasing
+                                        his multifaceted talents in literature, sports, and the arts.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">4</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Development of Nationalist
+                                        Sentiments (1877-1882):</h2>
+                                    <p class="text-gray-600">Rizal's educational journey during his early childhood was
+                                        not only marked by academic achievements but also by the gradual development of
+                                        his nationalist sentiments. Influenced by the injustices he witnessed in
+                                        Philippine society and inspired by the teachings of his educators, Rizal began
+                                        to form a deeper understanding of his country's plight under Spanish colonial
+                                        rule. His experiences during this period would sow the seeds for his future
+                                        activism and advocacy for Philippine independence.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat similar structure for other sections -->
+                    </div>
+
+                    <!-- Sources -->
+                    <div class="mt-8">
+                        <p class="text-gray-600 font-semibold mx-4">Sources:</p>
+                        <ul class="list-disc ml-6 mx-4">
+                            <li class="mb-2">Ambeth R. Ocampo. "Rizal Without the Overcoat." Anvil Publishing, Inc., 1990.</li>
+                            <li class="mb-2">National Historical Commission of the Philippines. "José Rizal Biography." https://nhcp.gov.ph/jose-rizal-biography/</li>
+                            <li class="mb-2">Wikipedia. "José Rizal." https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+<footer class="bg-[#8d3a31] border-gray-200 px-4 lg:px-6 py-2.5">
+    <div class="flex justify-between items-center mx-auto max-w-screen-xl">
+       <span class="text-sm text-white">© 2023 <a href="https://flowbite.com/" class="hover:underline">Jose Rizal
+             Biography</a>. All Rights Reserved.</span>
+       <ul class="flex flex-wrap items-center text-sm font-medium text-white">
+          <li>
+             <a href="#"
+                class="block py-2 pr-4 pl-3 border-b-2 border-transparent hover:border-white transition duration-300">Biography</a>
+          </li>
+          <li>
+             <a href="#"
+                class="block py-2 pr-4 pl-3 border-b-2 border-transparent hover:border-white transition duration-300">Works</a>
+          </li>
+          <li>
+             <a href="#"
+                class="block py-2 pr-4 pl-3 border-b-2 border-transparent hover:border-white transition duration-300">Legacy</a>
+          </li>
+          <li>
+             <a href="#"
+                class="block py-2 pr-4 pl-3 border-b-2 border-transparent hover:border-white transition duration-300">Resources</a>
+          </li>
+       </ul>
+    </div>
+ </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.min.js"></script>
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const earlyLifeSection = document.getElementById('earlyLife');
+        const educationSection = document.getElementById('education');
+        
+        earlyLifeSection.classList.remove('hidden');
+        educationSection.classList.add('hidden');
+    });
+    
+    function showSection(sectionId) {
+        document.getElementById('earlyLife').classList.toggle('hidden', sectionId !== 'earlyLife');
+        document.getElementById('education').classList.toggle('hidden', sectionId !== 'education');
+    }
+</script>
+</body>
+
+</html>
