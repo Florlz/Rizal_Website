@@ -16,7 +16,7 @@
 
 <body>
    <header>
-      <nav class="bg-[#8d3a31] border-gray-200 px-4 lg:px-6 py-2.5">
+      <nav class="z-10 fixed w-full top-0 bg-[#8d3a31] border-gray-200 px-4 lg:px-6 py-2.5">
          <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <img class="w-20" src="img/Camarines_Sur_Polytechnic_Colleges_Logo-289x300.png" alt="" srcset="">
             <img class="w-16 -ml-16" src="img/ccslogo.png" alt="">
@@ -58,18 +58,13 @@
                         class="block py-2 pr-4 pl-3 text-white font-DM text-2xl border-b-2 border-transparent hover:border-white transition duration-300"
                         aria-current="false">Legacy</a>
                   </li>
-                  <li>
-                     <a href="#"
-                        class="block py-2 pr-4 pl-3 text-white font-DM text-2xl border-b-2 border-transparent hover:border-white transition duration-300"
-                        aria-current="false">Resources</a>
-                  </li>
                </ul>
             </div>
          </div>
       </nav>
    </header>
    <section class="landing text-gray-900 body-font bg-white">
-      <div class="containera-fluid border-2 mt-10 mx-20 flex md:px-24 md:py-10 md:flex-row flex-col items-center">
+      <div class="containera-fluid border-2 mt-[10rem] mx-20 flex md:px-24 md:py-10 md:flex-row flex-col items-center">
          <div
             class="lg:flex-grow mt-5 md:mt-0   md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1
@@ -101,12 +96,14 @@
       </div>
    </section>
 
-   <div class="flex items-center justify-center h-96">
+   <div class="flex items-center justify-center h-96 mt-10">
       <div class="flex flex-col items-center max-w-5xl">
          <div class="text-center mb-12">
-            <h1 class="text-4xl font-extrabold text-black mb-4 font-DM">Pagdiriwang kay Jose Rizal</h1>
-            <p class="text-lg text-gray-700">Tuklasin ang matibay na impluwensya at karunungan ng pambansang bayani ng
-               Pilipinas, si Jose Rizal, sa pamamagitan ng mga salita mula sa kanya.</p>
+            <h1
+               class="font-black pb-10 mb-20 text-5xl text-black before:block before:absolute before:bg-amber-700  relative before:w-1/3 before:h-1 before:bottom-0 before:left-1/3">
+               Pagdiriwang kay Jose Rizal</h1>
+            <p class="text-lg text-gray-700">Discover the enduring influence and wisdom of the Philippines' national
+               hero, Jose Rizal, through his words.</p>
          </div>
          <div class="flex flex-col md:flex-row md:space-x-8">
             <div
@@ -141,9 +138,10 @@
    </div>
 
 
-   <section id="biography"
-    class="stages h-screen container-fluid mt-10">
-      <h1 class="text-4xl font-bold mb-4 text-center font-serif">Biography</h1>
+   <section id="biography" class="stages h-fit container-fluid mt-16">
+      <h1
+         class="font-black text-center pb-10 mb-20 text-5xl text-black before:block before:absolute before:bg-amber-700  relative before:w-1/3 before:h-1 before:bottom-0 before:left-1/3">
+         Biography</h1>
       <div class="mt-10 flex justify-center">
          <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
             <div class="bg-[#8d3a31] border-2 border-white max-w-sm rounded overflow-hidden shadow-lg p-1">
@@ -256,6 +254,159 @@
       </div>
    </section>
 -->
+   <section class="mx-8">
+      <div class="relative flex min-h-screen flex-col justify-center overflow-hidden py-6 sm:py-12">
+         <div class="m-10 flex flex-col items-center mx-auto max-w-screen-lg">
+            <div class="header flex w-full justify-center">
+               <h2
+                  class="font-black pb-10 mb-10 text-5xl text-black before:block before:absolute before:bg-amber-700  relative before:w-1/3 before:h-1 before:bottom-0 before:left-1/3">
+                  Works</h2>
+            </div>
+            <div class="grid w-full gap-10 grid-cols-3">
+               <div
+                  class="bg-white w-full rounded-lg shadow-md flex flex-col transition-all overflow-hidden hover:shadow-2xl">
+                  <div class="  p-6">
+
+                     <div
+                        class="pb-3 mb-4 border-b border-stone-200 text-xs font-medium flex justify-between text-blue-900">
+                        <span class="flex items-center gap-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                              stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                 d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                           </svg>
+                           Published on 1887
+                        </span>
+                        <span>
+                           <img src="img/book-svgrepo-com.png" class="w-6" alt="" srcset="">
+                        </span>
+                     </div>
+                     <h3 class="mb-4 font-semibold  text-2xl"><a href=""
+                           class="transition-all text-blue-900 hover:text-blue-600">Noli Me Tangere</a></h3>
+                     <p class="text-sky-800 text-sm mb-0 h-48">
+                        "Noli Me Tangere" by Jose Rizal aims to showcase the abuses of the Spaniards and friars in
+                        the Philippines. Its goal is to raise awareness among readers and urge them to take action
+                        against corruption and oppression. Additionally, it seeks to aid in the formation of national
+                        identity and strengthen the spirit of unity against colonial exploitation.
+                     </p>
+                  </div>
+                  <div class="mt-auto">
+                     <img src="img/noli.jpg" alt="" class="w-full h-60 object-cover">
+                  </div>
+               </div>
+               <div
+                  class="bg-white w-full rounded-lg shadow-md flex flex-col transition-all overflow-hidden hover:shadow-2xl">
+                  <div class="  p-6">
+
+                     <div
+                        class="pb-3 mb-4 border-b border-stone-200 text-xs font-medium flex justify-between text-blue-900">
+                        <span class="flex items-center gap-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                              stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                 d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                           </svg>
+                           Published on 1891
+                        </span>
+                        <span>
+                           <img src="img/book-svgrepo-com.png" class="w-6" alt="" srcset="">
+                        </span>
+                     </div>
+                     <h3 class="mb-4 font-semibold  text-2xl"><a href=""
+                           class="transition-all text-blue-900 hover:text-blue-600">El Filibusterismo</a></h3>
+                     <p class="text-sky-800 text-sm mb-0 h-48 overflow-y-scroll">
+                        "El Filibusterismo," also penned by Jose Rizal, serves as a sequel to "Noli Me Tangere" and
+                        continues the narrative of social injustices and colonial abuses in the Philippines. Its primary
+                        purpose is to delve deeper into the themes of oppression, inequality, and corruption prevalent
+                        during the Spanish colonial era. Through the character of Simoun and his quest for justice
+                        through revolution, Rizal critiques the failures of the existing system and advocates for
+                        societal reform. "El Filibusterismo" aims to provoke thought, inspire action, and further ignite
+                        the flames of Filipino nationalism and resistance against colonial oppression.
+                     </p>
+                  </div>
+                  <div class="mt-auto">
+                     <img src="img/elfili.jpg" alt="" class="w-full h-60 object-cover object-top">
+                  </div>
+               </div>
+               <div
+                  class="bg-white w-full rounded-lg shadow-md flex flex-col transition-all overflow-hidden hover:shadow-2xl">
+                  <div class="  p-6">
+
+                     <div
+                        class="pb-3 mb-4 border-b border-stone-200 text-xs font-medium flex justify-between text-blue-900">
+                        <span class="flex items-center gap-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                              stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                 d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                           </svg>
+                           Unfinished
+                        </span>
+                        <span>
+                           <img src="img/book-svgrepo-com.png" class="w-6" alt="" srcset="">
+                        </span>
+                     </div>
+                     <h3 class="mb-4 font-semibold  text-2xl"><a href=""
+                           class="transition-all text-blue-900 hover:text-blue-600">Makamisa</a></h3>
+                     <p class="text-sky-800 text-sm mb-0 h-48 overflow-y-scroll">
+
+                        "Makamisa" is an unfinished novel written by José Rizal during his exile in Dapitan. It was
+                        initially titled "La Bulaqueña," and later renamed by his friend, Mariano Ponce. The novel
+                        presents themes of love, faith, and redemption, revolving around the life of the protagonist,
+                        Juli. However, unlike Rizal's other works, "Makamisa" remains incomplete, leaving readers with
+                        speculation about its intended direction and message. Despite its unfinished state, the novel
+                        still holds significance as a glimpse into Rizal's literary and philosophical evolution during
+                        his final years.
+                     </p>
+                  </div>
+                  <div class="mt-auto">
+                     <img src="img/makamisa.jpg" alt="" class="w-full h-60 object-cover">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="rizal_legacy">
+      <div class="tab-section flex flex-col justify-center py-12 -mt-10">
+         <div class="max-w-7xl gap-7 mx-auto px-4 flex flex-col sm:flex-row">
+
+            <!-- Card with image and quote -->
+            <div class="bg-white h-fit max-w-70 shadow-md sm:rounded-lg flex-shrink-0 mb-8 sm:mb-0">
+               <img src="img/rizalstatue.jpg" alt="José Rizal"
+                  class="w-full h-auto sm:w-48 sm:h-64 object-cover object-top">
+               <div class="p-4">
+                  <p class="text-gray-600 text-sm italic">""Luneta Park"</p>
+               </div>
+            </div>
+
+            <!-- Blog content -->
+            <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+               <div class="px-6 py-8 ">
+                  <div class="border-b-2 border-stone-200 mb-4">
+                     <h1 class="text-4xl font-bold text-gray-900 mb-4">Rizal's Enduring Legacy</h1>
+                  </div>
+                  <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                     José Rizal's legacy to the Philippines is profound and enduring, shaping the nation's identity and
+                     aspirations in significant ways. As a polymath, nationalist, and advocate for social justice, Rizal
+                     left an indelible mark on Philippine society. Through his literary works, particularly "Noli Me
+                     Tangere" and "El Filibusterismo," Rizal exposed the injustices and abuses of the Spanish colonial
+                     regime, inspiring Filipinos to fight for independence and social reform. His writings served as a
+                     catalyst for the Philippine Revolution, igniting a fervor for national liberation and
+                     self-determination. Additionally, Rizal's emphasis on education, cultural pride, and civic
+                     responsibility laid the foundation for a progressive and enlightened Filipino society. His
+                     martyrdom at the hands of the Spanish authorities further galvanized the Filipino people, cementing
+                     his status as a symbol of courage, integrity, and sacrifice. Today, Rizal's legacy continues to
+                     resonate in the Philippines, serving as a guiding light for generations of Filipinos in their
+                     pursuit of freedom, democracy, and national dignity.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
    <footer class="bg-[#8d3a31] border-gray-200 px-4 lg:px-6 py-2.5">
       <div class="flex justify-between items-center mx-auto max-w-screen-xl">
          <span class="text-sm text-white">© 2023 <a href="https://flowbite.com/" class="hover:underline">Jose Rizal
@@ -272,10 +423,6 @@
             <li>
                <a href="#"
                   class="block py-2 pr-4 pl-3 border-b-2 border-transparent hover:border-white transition duration-300">Legacy</a>
-            </li>
-            <li>
-               <a href="#"
-                  class="block py-2 pr-4 pl-3 border-b-2 border-transparent hover:border-white transition duration-300">Resources</a>
             </li>
          </ul>
       </div>
