@@ -18,10 +18,8 @@
 
 <body>
     <header>
-        <nav class="z-10 w-full top-0 bg-[#8d3a31] border-gray-200 px-4 lg:px-6 py-2.5">
+        <nav class="bg-[#8d3a31] border-gray-200 px-4 lg:px-6 py-2.5">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                <img class="w-20" src="img/Camarines_Sur_Polytechnic_Colleges_Logo-289x300.png" alt="" srcset="">
-                <img class="w-16 -ml-16" src="img/ccslogo.png" alt="">
                 <a href="https://joserizal.com" class="flex items-center">
                     <span class="self-center text-6xl font-abuget whitespace-nowrap text-white">Jose Rizal</span>
                 </a>
@@ -51,14 +49,19 @@
                                 aria-current="page">Biography</a>
                         </li>
                         <li>
-                            <a href="index.html#work"
+                            <a href="#"
                                 class="block py-2 pr-4 pl-3 text-white font-DM text-2xl border-b-2 border-transparent hover:border-white transition duration-300"
                                 aria-current="false">Works</a>
                         </li>
                         <li>
-                            <a href="index.html#rizal_legacy"
+                            <a href="#"
                                 class="block py-2 pr-4 pl-3 text-white font-DM text-2xl border-b-2 border-transparent hover:border-white transition duration-300"
                                 aria-current="false">Legacy</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-white font-DM text-2xl border-b-2 border-transparent hover:border-white transition duration-300"
+                                aria-current="false">Resources</a>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +76,11 @@
                 <li>
                     <a href="javascript:void(0)" aria-current="page" id="earlyLifeTab"
                         class="block py-4 px-6 hover:text-gray-800" onclick="showSection('earlyLife')
-                            ">Early Life in Calamba</a>
+                        ">Early Life in Calamba</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="educationTab" class="block py-4 px-6 hover:text-gray-800"
+                        onclick="showSection('education')">Education Journey</a>
                 </li>
                 <li>
                     <a href="javascript:void(0)" id="familyTab" class="block py-4 px-6 hover:text-gray-800"
@@ -81,15 +88,7 @@
                 </li>
                 <li>
                     <a href="javascript:void(0)" id="signsTab" class="block py-4 px-6 hover:text-gray-800"
-                        onclick="showSection('signs')">Signs of Brilliance</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" id="educationTab" class="block py-4 px-6 hover:text-gray-800"
-                        onclick="showSection('education')">Education Journey</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" id="abroadTab" class="block py-4 px-6 hover:text-gray-800"
-                        onclick="showSection('abroad')">Life Abroad</a>
+                        onclick="showSection('signs')">Signs of Brilliance and Education</a>
                 </li>
             </ul>
         </div>
@@ -226,6 +225,129 @@
 
             </div>
         </div>
+    </section>
+    <section id="education" x-show.transition.opacity.duration.500ms="activeTab === 'education' " class="fade" x-cloak>
+        <div class="tab-section flex flex-col justify-center py-12 bg-gray-100">
+            <div class="max-w-7xl gap-7 mx-auto px-4 flex flex-col sm:flex-row">
+
+                <!-- Card with image and quote -->
+                <div class="bg-white h-fit max-w-60 shadow-md sm:rounded-lg flex-shrink-0 mb-8 sm:mb-0">
+                    <img src="img/rizalstudies.jpg" alt="José Rizal"
+                        class="w-full h-auto sm:w-48 sm:h-64 object-cover object-top">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm italic">"I was born and grew up in the shadow of the Church." -
+                            José Rizal</p>
+                    </div>
+                </div>
+
+                <!-- Blog content -->
+                <div class="max-w-2xl min-h-screen w-full mx-auto px-4 py-8 bg-white shadow-md sm:rounded-lg relative">
+                    <h1 class="text-3xl font-bold text-gray-800 mb-4 font-DM mx-4">The Educational Journey of José Rizal
+                        in His Early Childhood</h1>
+
+                    <p class="text-gray-600 mb-8 mx-4">The early years of José Rizal, the esteemed Philippine national
+                        hero, were characterized by a journey of learning and intellectual exploration. Let's trace the
+                        timeline of his educational experiences during this formative period:</p>
+
+                    <div class="mb-6">
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">1</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Home Education with Teodora
+                                        Alonso (1861-1870):
+                                    </h2>
+                                    <p class="text-gray-600">José Rizal's educational journey began at home under the
+                                        guidance of his mother, Teodora Alonso. From his birth in Calamba, Laguna in
+                                        1861 until approximately 1870, Teodora, a well-educated woman, played a pivotal
+                                        role in shaping Rizal's early intellectual development. She instilled in him a
+                                        love for reading, writing, and the arts, laying the foundation for his future
+                                        academic pursuits.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Repeat similar structure for other sections -->
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">2</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Formal Schooling in Biñan
+                                        (1870-1872):</h2>
+                                    <p class="text-gray-600">At the age of nine, Rizal embarked on his formal schooling
+                                        journey at the Colegio de San Juan de Letran in Biñan, Laguna. This period
+                                        marked his first exposure to formal education outside the confines of his home.
+                                        Despite the challenges and discrimination he faced as a young student of mixed
+                                        race, Rizal excelled academically, demonstrating his exceptional intellect and
+                                        thirst for knowledge.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">3</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Transfer to Ateneo Municipal de
+                                        Manila (1872-1877):</h2>
+                                    <p class="text-gray-600">In 1872, at the age of eleven, Rizal enrolled at the Ateneo
+                                        Municipal de Manila, one of the most prestigious educational institutions in the
+                                        Philippines at that time. Here, he continued his studies under the guidance of
+                                        renowned Jesuit educators. During his time at Ateneo, Rizal distinguished
+                                        himself not only academically but also in extracurricular activities, showcasing
+                                        his multifaceted talents in literature, sports, and the arts.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
+                                <span class="w-6 text-center text-white font-semibold">4</span>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
+                                <div class="pl-8">
+                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Development of Nationalist
+                                        Sentiments (1877-1882):</h2>
+                                    <p class="text-gray-600">Rizal's educational journey during his early childhood was
+                                        not only marked by academic achievements but also by the gradual development of
+                                        his nationalist sentiments. Influenced by the injustices he witnessed in
+                                        Philippine society and inspired by the teachings of his educators, Rizal began
+                                        to form a deeper understanding of his country's plight under Spanish colonial
+                                        rule. His experiences during this period would sow the seeds for his future
+                                        activism and advocacy for Philippine independence.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat similar structure for other sections -->
+                    </div>
+
+                    <!-- Sources -->
+                    <div class="mt-8">
+                        <p class="text-gray-600 font-semibold mx-4">Sources:</p>
+                        <ul class="list-disc ml-6 mx-4">
+                            <li class="mb-2">Ambeth R. Ocampo. "Rizal Without the Overcoat." Anvil Publishing, Inc.,
+                                1990.</li>
+                            <li class="mb-2">National Historical Commission of the Philippines. "José Rizal Biography."
+                                https://nhcp.gov.ph/jose-rizal-biography/</li>
+                            <li class="mb-2">Wikipedia. "José Rizal." https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
     <section id="family" x-show.transition.opacity.duration.500ms="activeTab === 'family' " class="fade" x-cloak>
@@ -515,6 +637,10 @@
                             </div>
                         </div>
 
+                        <!-- Repeat similar structure for other sections -->
+
+                        <!-- Add more sections focusing on different aspects of family dynamics -->
+
                     </div>
 
                     <!-- Sources -->
@@ -537,363 +663,6 @@
             </div>
         </div>
 
-    </section>
-
-    <section id="education" x-show.transition.opacity.duration.500ms="activeTab === 'education' " class="fade" x-cloak>
-        <div class="tab-section flex flex-col justify-center py-12 bg-gray-100">
-            <div class="max-w-7xl gap-7 mx-auto px-4 flex flex-col sm:flex-row">
-
-                <!-- Card with image and quote -->
-                <div class="bg-white h-fit max-w-60 shadow-md sm:rounded-lg flex-shrink-0 mb-8 sm:mb-0">
-                    <img src="img/rizalstudies.jpg" alt="José Rizal"
-                        class="w-full h-auto sm:w-48 sm:h-64 object-cover object-top">
-                    <div class="p-4">
-                        <p class="text-gray-600 text-sm italic">"I was born and grew up in the shadow of the Church." -
-                            José Rizal</p>
-                    </div>
-                </div>
-
-                <!-- Blog content -->
-                <div class="max-w-2xl min-h-screen w-full mx-auto px-4 py-8 bg-white shadow-md sm:rounded-lg relative">
-                    <h1 class="text-3xl font-bold text-gray-800 mb-4 font-DM mx-4">The Educational Journey of José Rizal
-                        in His Early Childhood</h1>
-
-                    <p class="text-gray-600 mb-8 mx-4">The early years of José Rizal, the esteemed Philippine national
-                        hero, were characterized by a journey of learning and intellectual exploration. Let's trace the
-                        timeline of his educational experiences during this formative period:</p>
-
-                    <div class="mb-6">
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">1</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Home Education with Teodora
-                                        Alonso (1861-1870):
-                                    </h2>
-                                    <p class="text-gray-600">José Rizal's educational journey began at home under the
-                                        guidance of his mother, Teodora Alonso. From his birth in Calamba, Laguna in
-                                        1861 until approximately 1870, Teodora, a well-educated woman, played a pivotal
-                                        role in shaping Rizal's early intellectual development. She instilled in him a
-                                        love for reading, writing, and the arts, laying the foundation for his future
-                                        academic pursuits.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">2</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Home Education with his Uncles
-                                        (1861-1870):
-                                    </h2>
-                                    <p class="text-gray-600">Jose Rizal's uncles, known as "Titos," also had an
-                                        important part in his schooling. Among them, his uncle José Alberto, a scholar,
-                                        made significant contributions to Rizal's intellectual development. José Alberto
-                                        taught Rizal significant lessons in a variety of areas, which enriched his
-                                        comprehension and knowledge. These uncles, together with Rizal's mother, Teodora
-                                        Alonso Realonda, played an important role in cultivating Rizal's early
-                                        education, setting the groundwork for his future academic studies and shaping
-                                        his mind.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">3</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Rizal's Private Tutors
-                                        (1870-1880):
-                                    </h2>
-                                    <p class="text-gray-600">
-                                        In addition to his mother and uncles, José Rizal benefited from the guidance of
-                                        private tutors during his formative years. Leon Monroy imparted knowledge of
-                                        Latin, providing Rizal access to classical literature. His older brother,
-                                        Paciano Mercado, tutored him in Spanish, crucial for communication and education
-                                        under colonial rule. Justiniano Aquino Cruz, renowned for his scholarship, aided
-                                        Rizal in excelling across disciplines. These tutors, alongside family guidance,
-                                        shaped Rizal's education, laying the foundation for his future as a scholar,
-                                        writer, and national hero.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Repeat similar structure for other sections -->
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">4</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Formal Schooling in Biñan
-                                        (1870-1872):</h2>
-                                    <p class="text-gray-600">At the age of nine, Rizal embarked on his formal schooling
-                                        journey at the Colegio de San Juan de Letran in Biñan, Laguna. This period
-                                        marked his first exposure to formal education outside the confines of his home.
-                                        Despite the challenges and discrimination he faced as a young student of mixed
-                                        race, Rizal excelled academically, demonstrating his exceptional intellect and
-                                        thirst for knowledge.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">5</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Transfer to Ateneo Municipal de
-                                        Manila (1872-1877):</h2>
-                                    <p class="text-gray-600">In 1872, at the age of eleven, Rizal enrolled at the Ateneo
-                                        Municipal de Manila, one of the most prestigious educational institutions in the
-                                        Philippines at that time. Here, he continued his studies under the guidance of
-                                        renowned Jesuit educators. During his time at Ateneo, Rizal distinguished
-                                        himself not only academically but also in extracurricular activities, showcasing
-                                        his multifaceted talents in literature, sports, and the arts.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">6</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Education in University of
-                                        Santo Tomas (1877)</h2>
-                                    <p class="text-gray-600">José Rizal's study at the University of Santo Tomas (UST)
-                                        was defined by academic distinction as well as growing dissatisfaction with the
-                                        Philippines' current social and political situation. Rizal enrolled in 1877 to
-                                        study Philosophy and Letters and excelled academically despite discrimination
-                                        and outmoded teaching techniques. Actively participating in discussions and
-                                        literary societies, he demonstrated his intellectual prowess while being exposed
-                                        to European liberal concepts. However, his stay at UST strengthened his feeling
-                                        of nationalism and drove his advocacy for reform. Despite completing his
-                                        studies, Rizal's experiences at UST had a tremendous impact on his subsequent
-                                        achievements as a revolutionary thinker and leader in the fight for Philippine
-                                        independence.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Repeat similar structure for other sections -->
-                    </div>
-
-                    <!-- Sources -->
-                    <div class="mt-8">
-                        <p class="text-gray-600 font-semibold mx-4">Sources:</p>
-                        <ul class="list-disc ml-6 mx-4">
-                            <li class="mb-2">Ambeth R. Ocampo. "Rizal Without the Overcoat." Anvil Publishing, Inc.,
-                                1990.</li>
-                            <li class="mb-2">National Historical Commission of the Philippines. "José Rizal Biography."
-                                https://nhcp.gov.ph/jose-rizal-biography/</li>
-                            <li class="mb-2">Wikipedia. "José Rizal." https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section id="abroad" x-show.transition.opacity.duration.500ms="activeTab === 'abroad' " class="fade" x-cloak>
-        <div class="tab-section flex flex-col justify-center py-12 bg-gray-100">
-            <div class="max-w-7xl gap-7 mx-auto px-4 flex flex-col sm:flex-row">
-
-                <!-- Card with image and quote -->
-                <div class="bg-white h-fit max-w-60 shadow-md sm:rounded-lg flex-shrink-0 mb-8 sm:mb-0">
-                    <img src="img/abroad.jpg" alt="José Rizal Abroad"
-                        class="w-full h-auto sm:w-48 sm:h-64 object-cover object-top">
-                    <div class="p-4">
-                        <p class="text-gray-600 text-sm italic">"The youth is the hope of our future." - José Rizal</p>
-                    </div>
-                </div>
-
-                <!-- Blog content -->
-                <div class="max-w-2xl min-h-screen w-full mx-auto px-4 py-8 bg-white shadow-md sm:rounded-lg relative">
-                    <h1 class="text-3xl font-bold text-gray-800 mb-4 font-DM mx-4 pb-4 border-b-2 border-stone-300">Jose Rizal's Life Abroad</h1>
-
-                    <p class="text-gray-600 mb-8 mx-4">José Rizal's sojourn abroad marked a transformative period in his
-                        life,
-                        characterized by intellectual growth, activism, and a deepening sense of national identity.
-                        Departing
-                        from his homeland, Rizal pursued further education at the Universidad Central de Madrid in
-                        Spain,
-                        where he earned a degree in Medicine and specialized in ophthalmology. Immersed in the
-                        intellectual
-                        and cultural milieu of Europe, he engaged with prominent thinkers and reformists, broadening his
-                        perspectives on society and politics.</p>
-
-                    <div class="mb-6">
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">1</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">1882:</h2>
-                                    <p class="text-gray-600">Rizal departed from the Philippines to pursue further
-                                        studies in Europe, beginning his journey in Spain.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">2</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">1882-1885:</h2>
-                                    <p class="text-gray-600">He studied Medicine at the Universidad Central de Madrid,
-                                        specializing in ophthalmology. During this time, he immersed himself in various
-                                        intellectual pursuits and engaged with prominent thinkers and reformists.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Repeat similar structure for other sections -->
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">3</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">1887:</h2>
-                                    <p class="text-gray-600">Rizal visited Paris, where he continued his studies and
-                                        further expanded his network of acquaintances in European intellectual circles.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">4</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">1887-1888:</h2>
-                                    <p class="text-gray-600"> He traveled to Heidelberg, Germany, to complete his
-                                        studies in ophthalmology and gained clinical experience at the University Eye
-                                        Hospital.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">5</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">1888:</h2>
-                                    <p class="text-gray-600">Rizal traveled to London, where he continued his studies
-                                        and engaged in discussions with members of the Filipino expatriate community and
-                                        other intellectuals.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">6</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">1888-1889:</h2>
-                                    <p class="text-gray-600">He visited various European cities, including Berlin and
-                                        Brussels, expanding his cultural and intellectual experiences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">7</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">1890:</h2>
-                                    <p class="text-gray-600">Rizal returned briefly to the Philippines but found himself
-                                        increasingly disillusioned with the colonial regime and social injustices,
-                                        leading him to advocate for reform more fervently.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">8</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">1891: </h2>
-                                    <p class="text-gray-600">He traveled again to Europe, primarily to Brussels, where
-                                        he completed his second novel, "El Filibusterismo," and continued his advocacy
-                                        for Philippine independence.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-4">
-                            <div class="h-8 w-8 bg-black rounded-sm flex items-center justify-center mr-4">
-                                <span class="w-6 text-center text-white font-semibold">9</span>
-                            </div>
-                            <div class="relative">
-                                <div class="absolute left-5 top-0 bottom-0 w-px bg-gray-300"></div>
-                                <div class="pl-8">
-                                    <h2 class="text-xl font-semibold text-gray-800 mb-2">1892:</h2>
-                                        <p class="text-gray-600">Rizal returned to the Philippines but was arrested
-                                            shortly after his arrival, leading to his exile in Dapitan.
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <!-- Sources -->
-                    <div class="mt-8">
-                        <p class="text-gray-600 font-semibold mx-4">Sources:</p>
-                        <ul class="list-disc ml-6 mx-4">
-                            <li class="mb-2">National Historical Commission of the Philippines. "José Rizal Biography." <a href="https://nhcp.gov.ph/jose-rizal-biography/" target="_blank" rel="noopener noreferrer">https://nhcp.gov.ph/jose-rizal-biography/</a></li>
-                            <li class="mb-2">Wikipedia. "José Rizal." <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </section>
 
 
@@ -926,20 +695,18 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const earlyLifeSection = document.getElementById('earlyLife');
+            const educationSection = document.getElementById('education');
             const familySection = document.getElementById('family');
             const signsSection = document.getElementById('signs');
-            const educationSection = document.getElementById('education');
-            const abroadSection = document.getElementById('abroad');
 
             earlyLifeSection.classList.remove('hidden');
+            educationSection.classList.add('hidden');
             familySection.classList.add('hidden');
             signsSection.classList.add('hidden');
-            educationSection.classList.add('hidden');
-            abroadSection.classList.add('hidden');
         });
 
         function showSection(sectionId) {
-            const sections = ['earlyLife', 'family', 'signs', 'education', 'abroad'];
+            const sections = ['earlyLife', 'education', 'family', 'signs'];
 
             sections.forEach(id => {
                 const section = document.getElementById(id);
@@ -952,7 +719,7 @@
         }
 
         function setActiveTab(tabId) {
-            const tabs = ['earlyLifeTab', 'familyTab', 'signsTab', 'educationTab', 'abroadTab'];
+            const tabs = ['earlyLifeTab', 'educationTab', 'familyTab', 'signsTab'];
             tabs.forEach(tab => {
                 const tabElement = document.getElementById(tab);
                 if (tab === tabId) {
