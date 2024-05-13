@@ -2019,6 +2019,34 @@ video {
   top: 0px;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.left-20 {
+  left: 5rem;
+}
+
+.left-\[20px\] {
+  left: 20px;
+}
+
+.left-\[60px\] {
+  left: 60px;
+}
+
+.left-\[80px\] {
+  left: 80px;
+}
+
+.left-\[100px\] {
+  left: 100px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2226,10 +2254,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -2240,6 +2264,18 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.-ml-5 {
+  margin-left: -1.25rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .box-border {
@@ -2384,10 +2420,6 @@ video {
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .min-h-screen {
@@ -3614,6 +3646,11 @@ video {
   border-color: rgb(231 229 228 / var(--tw-border-opacity));
 }
 
+.border-stone-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(214 211 209 / var(--tw-border-opacity));
+}
+
 .border-transparent {
   border-color: transparent;
 }
@@ -3621,11 +3658,6 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-stone-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(214 211 209 / var(--tw-border-opacity));
 }
 
 .bg-\[\#8d3a31\] {
@@ -3806,6 +3838,11 @@ video {
      object-position: top;
 }
 
+.object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -3907,6 +3944,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -3943,8 +3984,12 @@ video {
   padding-top: 1rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pr-20 {
+  padding-right: 5rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
 }
 
 .text-left {
@@ -4013,10 +4058,6 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl {
